@@ -11,6 +11,7 @@ function searchMaterial() {
     }
 
     alert("「" + keyword + "」を検索します。");
+
 }
 
 
@@ -43,7 +44,7 @@ function showScreen(screenId) {
     });
 
 
-    // 指定した画面だけ表示
+    // 指定した画面を表示
     document.getElementById(screenId).style.display = "block";
 
 }
