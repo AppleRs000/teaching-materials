@@ -282,8 +282,132 @@
 <!-- ④ わり算 -->
 <!-- ==================== -->
 
-<div id="divisionScreen" class="screen" style="display: none;">
+<!-- ==================== -->
+<!-- ④ わり算 教材画面 -->
+<!-- ==================== -->
 
+<div id="divisionScreen" class="screen" style="display: none;">
+<!-- ==================== -->
+<!-- ⑤ アップロード画面 -->
+<!-- ==================== -->
+
+<div id="uploadScreen" class="screen" style="display: none;">
+
+    <header>
+
+        <button onclick="showScreen('divisionScreen')">
+            ← わり算に戻る
+        </button>
+
+        <h1>📤 教材をアップロード</h1>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>教材の情報</h2>
+
+            <p>
+                3年生 → 算数 → わり算
+            </p>
+
+        </section>
+
+
+        <section>
+
+            <h2>教材の種類</h2>
+
+            <div class="button-grid">
+
+                <button>📄 プリント</button>
+                <button>📝 授業の流れ・板書</button>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>単元の時期</h2>
+
+            <div class="button-grid">
+
+                <button>単元序盤</button>
+                <button>単元中盤</button>
+                <button>単元終末</button>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>教材名</h2>
+
+            <input
+                type="text"
+                class="upload-input"
+                placeholder="例：わり算の導入プリント">
+
+        </section>
+
+
+        <section>
+
+            <h2>説明</h2>
+
+            <textarea
+                class="upload-textarea"
+                placeholder="この教材について説明してください"></textarea>
+
+        </section>
+
+
+        <section>
+
+            <h2>ファイル</h2>
+
+            <input
+                type="file"
+                accept=".pdf,.doc,.docx,.ppt,.pptx,.xlsx">
+
+        </section>
+
+
+        <section>
+
+            <h2>写真</h2>
+
+            <input
+                type="file"
+                accept="image/*"
+                multiple>
+
+        </section>
+
+
+        <section>
+
+            <button
+                class="upload-submit"
+                onclick="alert('教材を公開する処理はこれから作ります！')">
+
+                📤 教材を公開する
+
+            </button>
+
+        </section>
+
+    </main>
+
+</div>
+    
     <header>
 
         <button onclick="showScreen('grade3MathScreen')">
@@ -297,43 +421,78 @@
 
     <main>
 
+        <!-- 教材の種類 -->
+        <div class="tab-container">
+
+            <button
+                class="main-tab active"
+                onclick="changeMaterialType('print')">
+
+                📄 プリント
+
+            </button>
+
+            <button
+                class="main-tab"
+                onclick="changeMaterialType('lesson')">
+
+                📝 授業の流れ・板書
+
+            </button>
+
+        </div>
+
+
+        <!-- 単元の時期 -->
+        <div class="sub-tab-container">
+
+            <button
+                class="sub-tab active"
+                onclick="changePeriod('beginning')">
+
+                単元序盤
+
+            </button>
+
+            <button
+                class="sub-tab"
+                onclick="changePeriod('middle')">
+
+                単元中盤
+
+            </button>
+
+            <button
+                class="sub-tab"
+                onclick="changePeriod('end')">
+
+                単元終末
+
+            </button>
+
+        </div>
+
+
+        <!-- 教材一覧 -->
+
         <section>
 
-            <h2>📄 プリント</h2>
+            <div id="materialList">
 
-            <div class="button-grid">
-
-                <button>単元序盤</button>
-                <button>単元中盤</button>
-                <button>単元終末</button>
+                <!-- JavaScriptで教材を表示 -->
 
             </div>
 
         </section>
 
 
-        <section>
+        <!-- アップロード -->
 
-            <h2>📝 授業の流れ・板書</h2>
-
-            <div class="button-grid">
-
-                <button>単元序盤</button>
-                <button>単元中盤</button>
-                <button>単元終末</button>
-
-            </div>
-
-        </section>
-
-
-        <section>
-
-            <h2>📤 教材をアップロード</h2>
+        <section class="upload-section">
 
             <button
                 class="upload-button"
-                onclick="alert('アップロード画面は次に作ります！')">
+                onclick="showScreen('uploadScreen')">
 
                 ＋ 教材をアップロード
 
