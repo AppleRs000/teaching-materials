@@ -153,3 +153,19 @@ footer {
     }
 
 }
+/* 画面 */
+
+.screen {
+    min-height: 100vh;
+}
+
+
+/* 戻るボタン */
+
+header > button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
