@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>せんせい教材庫</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 せんせい教材庫</h1>
+        <p>先生の教材を、みんなで共有</p>
+    </header>
+
+    <main>
+
+        <!-- フリー検索 -->
+        <section class="search-section">
+
+            <h2>🔍 教材を探す</h2>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="教材名・単元・キーワードを入力">
+                
+                <button onclick="searchMaterial()">
+                    🔍 検索
+                </button>
+            </div>
+
+        </section>
+
+
+        <!-- 学年 -->
+        <section>
+
+            <h2>👦 学年から探す</h2>
+
+            <div class="button-grid">
+
+                <button onclick="selectGrade(1)">1年</button>
+                <button onclick="selectGrade(2)">2年</button>
+                <button onclick="selectGrade(3)">3年</button>
+                <button onclick="selectGrade(4)">4年</button>
+                <button onclick="selectGrade(5)">5年</button>
+                <button onclick="selectGrade(6)">6年</button>
+
+            </div>
+
+        </section>
+
+
+        <!-- 教科 -->
+        <section>
+
+            <h2>📚 教科から探す</h2>
+
+            <div class="button-grid subject-grid">
+
+                <button>国語</button>
+                <button>算数</button>
+                <button>理科</button>
+                <button>社会</button>
+
+                <button>音楽</button>
+                <button>道徳</button>
+                <button>総合</button>
+                <button>学活</button>
+
+                <button>図工</button>
+                <button>家庭科</button>
+                <button>体育</button>
+                <button>外国語</button>
+
+                <button>外国語活動</button>
+
+            </div>
+
+        </section>
+
+
+        <!-- 余った時間 -->
+        <section class="extra-time">
+
+            <h2>⏱️ 余った時間に</h2>
+
+            <p>
+                「あと5分ある！」そんなときに使える教材
+            </p>
+
+            <div class="button-grid">
+
+                <button>5分</button>
+                <button>10分</button>
+                <button>15分</button>
+
+                <button>クイズ</button>
+                <button>パズル</button>
+                <button>ゲーム</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <button class="upload-button">
+            ＋ 教材を投稿する
+        </button>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
