@@ -169,3 +169,114 @@ header > button {
     cursor: pointer;
     margin-bottom: 10px;
 }
+/* ========================================
+   教材タブ
+======================================== */
+
+.tab-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main-tab {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    background: #e9edf2;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-tab.active {
+    background: white;
+    font-weight: bold;
+}
+
+
+/* 単元時期 */
+
+.sub-tab-container {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.sub-tab {
+    flex: 1;
+    padding: 12px 5px;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sub-tab.active {
+    background: #333;
+    color: white;
+}
+
+
+/* 教材カード */
+
+.material-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+    background: white;
+}
+
+.material-card h3 {
+    margin-top: 0;
+}
+
+.material-card button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+/* 教材がない場合 */
+
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}
+
+
+/* アップロード */
+
+.upload-section {
+    text-align: center;
+}
+
+.upload-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.upload-textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.upload-submit {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
