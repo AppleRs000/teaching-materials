@@ -128,65 +128,222 @@
 
 
 
-    <!-- ==================== -->
-    <!-- ② 3年生画面 -->
-    <!-- ==================== -->
+  <!-- ==================== -->
+<!-- ② 3年生画面 -->
+<!-- ==================== -->
 
-    <div id="grade3Screen" class="screen" style="display: none;">
+<div id="grade3Screen" class="screen" style="display: none;">
 
-        <header>
+    <header>
 
-            <button onclick="showScreen('topScreen')">
-                ← 戻る
+        <button onclick="showScreen('topScreen')">
+            ← 戻る
+        </button>
+
+        <h1>👦 3年生の教材</h1>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>📚 教科から選ぶ</h2>
+
+            <div class="button-grid">
+
+                <button onclick="showScreen('grade3JapaneseScreen')">
+                    国語
+                </button>
+
+                <button onclick="showScreen('grade3MathScreen')">
+                    算数
+                </button>
+
+                <button>理科</button>
+                <button>社会</button>
+                <button>音楽</button>
+                <button>道徳</button>
+                <button>総合</button>
+                <button>学活</button>
+                <button>図工</button>
+                <button>体育</button>
+
+            </div>
+
+        </section>
+
+
+        <section class="extra-time">
+
+            <h2>⏱️ 余った時間に</h2>
+
+            <div class="button-grid">
+
+                <button>5分</button>
+                <button>10分</button>
+                <button>15分</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+
+<!-- ==================== -->
+<!-- ③ 3年生 算数 -->
+<!-- ==================== -->
+
+<div id="grade3MathScreen" class="screen" style="display: none;">
+
+    <header>
+
+        <button onclick="showScreen('grade3Screen')">
+            ← 3年生
+        </button>
+
+        <h1>🔢 3年生 算数</h1>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>📚 学習内容</h2>
+
+            <div class="button-grid">
+
+                <button onclick="showScreen('divisionScreen')">
+                    わり算
+                </button>
+
+                <button>
+                    大きな数
+                </button>
+
+                <button>
+                    分数
+                </button>
+
+                <button>
+                    小数
+                </button>
+
+                <button>
+                    図形
+                </button>
+
+                <button>
+                    表とグラフ
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="extra-time">
+
+            <h2>⏱️ 余った時間に</h2>
+
+            <p>
+                授業のあと少し時間が余ったときに
+                使える教材
+            </p>
+
+            <div class="button-grid">
+
+                <button>5分</button>
+                <button>10分</button>
+                <button>15分</button>
+
+                <button>クイズ</button>
+                <button>パズル</button>
+                <button>ゲーム</button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+
+<!-- ==================== -->
+<!-- ④ わり算 -->
+<!-- ==================== -->
+
+<div id="divisionScreen" class="screen" style="display: none;">
+
+    <header>
+
+        <button onclick="showScreen('grade3MathScreen')">
+            ← 3年生 算数
+        </button>
+
+        <h1>➗ わり算</h1>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>📄 プリント</h2>
+
+            <div class="button-grid">
+
+                <button>単元序盤</button>
+                <button>単元中盤</button>
+                <button>単元終末</button>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>📝 授業の流れ・板書</h2>
+
+            <div class="button-grid">
+
+                <button>単元序盤</button>
+                <button>単元中盤</button>
+                <button>単元終末</button>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>📤 教材をアップロード</h2>
+
+            <button
+                class="upload-button"
+                onclick="alert('アップロード画面は次に作ります！')">
+
+                ＋ 教材をアップロード
+
             </button>
 
-            <h1>👦 3年生の教材</h1>
+        </section>
 
-        </header>
+    </main>
 
-
-        <main>
-
-            <section>
-
-                <h2>📚 教科から選ぶ</h2>
-
-                <div class="button-grid">
-
-                    <button>国語</button>
-                    <button>算数</button>
-                    <button>理科</button>
-                    <button>社会</button>
-                    <button>音楽</button>
-                    <button>道徳</button>
-                    <button>総合</button>
-                    <button>学活</button>
-                    <button>図工</button>
-                    <button>体育</button>
-
-                </div>
-
-            </section>
-
-
-            <section class="extra-time">
-
-                <h2>⏱️ 余った時間に</h2>
-
-                <div class="button-grid">
-
-                    <button>5分</button>
-                    <button>10分</button>
-                    <button>15分</button>
-
-                </div>
-
-            </section>
-
-        </main>
-
-    </div>
-
+</div>
 
 
     <script src="script.js"></script>
