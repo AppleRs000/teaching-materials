@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+
+/* ヘッダー */
+
+header {
+    text-align: center;
+    padding: 30px 15px;
+    background: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 8px 0 0;
+    color: #666;
+}
+
+
+/* 全体 */
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* 各セクション */
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+
+/* 検索 */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 0 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* ボタン */
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.button-grid button {
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* ボタンを押したとき */
+
+.button-grid button:hover {
+    background: #f0f4f8;
+}
+
+
+/* 余った時間 */
+
+.extra-time {
+    background: #fffaf0;
+}
+
+
+/* フッター */
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
+
+.upload-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+/* スマホ */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .button-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        padding: 12px;
+    }
+
+}
